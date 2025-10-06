@@ -1,1 +1,331 @@
-/* место для вашего кода */
+/* Основной контейнер */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Секция Header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    max-height: 293px;
+    padding: 92px 50px 96px 50px;
+}
+
+.header-nav {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 32px;
+    list-style-type: circle;
+}
+
+.header-nav-list-item {
+    font-size: 18px;
+    font-weight: 400;
+    text-underline-offset: 4px;
+}
+
+.header-nav-list-first-item {
+    list-style-type: none;
+}
+
+.header-link-active {
+    text-decoration: none;
+}
+
+.header-logo {
+    display: block;
+    justify-self: center;
+    align-self: center;
+    width: 148px;
+    height: 105px;
+}
+
+.header-logo-image {
+    width: 100%;
+    height: 100%;
+}
+
+.header-address {
+    list-style-type: none;
+    max-width: 240px;
+    margin-left: 186px;
+    margin-top: 4px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 25.7px;
+    letter-spacing: 0.1px;
+}
+
+/* Секция Cover */
+.cover {
+    position: relative;
+    height: 757px;
+    padding: 165px 50px 62px 50px;
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+.cover-title {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1.16;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.cover-text-centered {
+    text-align: center;
+    margin-left: 32px;
+}
+
+.cover-text-right {
+    margin-left: 615px;
+}
+
+.cover-description {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    gap: 77px;
+    padding: 106px 0 0 0;
+}
+
+.cover-description-text {
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 18px;
+    color: #FFF;
+}
+
+.cover-description-button {
+    margin-left: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FFF;
+    border: 1px #FFF solid;
+    background-color: transparent;
+    padding: 14px 32px;
+    cursor: pointer;
+}
+
+/* Секция Lots */
+.lots {
+    margin-top: 180px;
+    padding: 0 25px;
+}
+
+.lots-title {
+    padding: 0 0 30px 40px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.lots-cards-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    list-style: none;
+}
+
+.lot {
+    width: 335px;
+    height: 595px;
+}
+
+.lot-link {
+    display: block;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: 100%;
+    gap: 30px;
+    padding: 50px 40px;
+    background-position: center;
+}
+
+.type-film {
+    background-image: url("../images/card-lot-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.type-book {
+    background-image: url("../images/card-lot-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.type-picture {
+    background-image: url("../images/card-lot-03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-title {
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.19;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.card-text {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 1.19;
+    color: #FFF;
+}
+
+.lots-more {
+    display: block;
+    margin: 30px 0 0 40px;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    width: fit-content;
+}
+
+/* Секция About */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 595px;
+    margin-top: 120px;
+    padding: 0 25px;
+    column-gap: 25px;
+}
+
+.about-cont {
+    justify-self: center;
+}
+
+.about-text-content {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/4;
+    max-width: 693px;
+    max-height: 392px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.about-logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about-title {
+    padding: 100px 0 104px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* Секция Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    margin-top: 180px;
+    padding: 1px 50px 82px 50px;
+}
+
+.footer-nav-list {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-item {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+    text-underline-offset: 4px;
+}
+
+.footer-link {
+    font-size: 18px;
+    text-underline-position: under;
+}
+
+.footer-link-active {
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    width: 240px;
+    height: 48px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer-social-icon {
+    width: 48px;
+    height: 48px;
+}
